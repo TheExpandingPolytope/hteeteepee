@@ -32,8 +32,8 @@ fn parse_line(req: &str) -> Result<Request, Box<dyn Error>> {
 
     let uri = Path::new(parts.next().ok_or("no uri specified")?);
     let normUri = uri.to_str().expect("unicode is invalid");
-    const root: &str = "home/";
-    if !Path::new(&format!("{}{}", root, normUri)).exists() {
+    const root: &str = "/";
+    if !Path::new(&format!("{}", normUri)).exists() {
         Err("resource does not exist")?;
     }
 
