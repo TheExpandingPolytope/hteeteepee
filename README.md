@@ -1,4 +1,5 @@
 # http-rust
-rust http implementation 
-Built to give myself an intermediate understanding of the http protocol. Not at all a legit implementation.
-https://tools.ietf.org/html/rfc2616
+
+Implementation of the Hypertext Transfer Protocol 1.1 built in rust for learning purposes.
+
+<a href="https://tools.ietf.org/html/rfc2616">references</a>
